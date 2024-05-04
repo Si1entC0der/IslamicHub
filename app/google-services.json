@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624778070321",
+    "project_id": "jamattime-1672a",
+    "storage_bucket": "jamattime-1672a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624778070321:android:152eaab705c945bd378810",
+        "android_client_info": {
+          "package_name": "com.example.islamichub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbxozm6nQ7iO2PieFPLqrFq4VnBINTpXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

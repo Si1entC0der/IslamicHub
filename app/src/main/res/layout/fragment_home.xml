@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_latitude"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        tools:context=".Home_Page">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="417dp"
+            android:layout_height="220dp"
+            android:background="@drawable/home_night_camel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <View
+                android:layout_width="417dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="#80554747" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="39dp"
+                android:layout_height="31dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="345dp"
+                android:src="@drawable/baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/currentlocation"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:text="Dhaka, Bangladesh"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/currentbar"
+                android:layout_width="123dp"
+                android:layout_height="39dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="41dp"
+                android:layout_marginEnd="253dp"
+                android:layout_marginBottom="25dp"
+                android:text="Bar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/currentDate"
+                android:layout_width="130dp"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="269dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="25dp"
+                android:text="Date"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="96dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="285dp"
+                android:layout_marginTop="224dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="10dp"
+                android:text="00m 00s"
+                android:textColor="#F6F3F3"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mid_under_layout"
+            android:layout_width="425dp"
+            android:layout_height="211dp"
+            android:background="#C3BEBE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+                android:id="@+id/mid_up_layout"
+                android:layout_width="409dp"
+                android:layout_height="207dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/home_mid_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/qiabla_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="78dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="144dp"
+                    android:layout_marginTop="49dp"
+                    android:layout_marginEnd="175dp"
+                    android:layout_marginBottom="79dp"
+                    android:src="@drawable/qiaba_home">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tasbeeh_text"
+                    android:layout_width="94dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/Tasbeeh_button"
+                    android:layout_alignStart="@+id/Tasbeeh_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="53dp"
+                    android:layout_marginBottom="47dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center|left"
+                    android:text="Tasbeeh"
+                    android:textColor="#FF9800"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/Tasbeeh_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="83dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="262dp"
+                    android:layout_marginTop="49dp"
+                    android:layout_marginEnd="54dp"
+                    android:src="@drawable/tasbeeh_home" />
+
+                <ImageView
+                    android:id="@+id/jamat_time_icon"
+                    android:layout_width="88dp"
+                    android:layout_height="82dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="51dp"
+                    android:layout_marginEnd="298dp"
+                    android:layout_marginBottom="74dp"
+                    android:src="@drawable/jamat_time" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignStart="@+id/qiabla_button"
+                    android:layout_alignEnd="@+id/qiabla_button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_marginBottom="41dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:text="Qibla"
+                    android:textColor="#E2ECEB"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_alignStart="@+id/jamat_time_icon"
+                    android:layout_alignEnd="@+id/jamat_time_icon"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginEnd="-12dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="Jamat Time"
+                    android:textColor="#EA5252"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/footer_layout"
+            android:layout_width="425dp"
+            android:layout_height="299dp"
+            android:background="@drawable/hadith_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mid_under_layout"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="106dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="73dp"
+                android:layout_marginBottom="178dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:text="&quot;The best among you are those who have the   best manners and character.&quot;"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

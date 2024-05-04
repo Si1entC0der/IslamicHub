@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".All_Namaz_Time">
+
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/namaz_time_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/search_view_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/Searchcity"
+            android:layout_width="326dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/search_view_shape"
+            android:gravity="center"
+            android:hint="Enter City to Search"
+            android:fontFamily="@font/lato_regular"
+            android:textColorHint="@color/black"/>
+
+        <ImageView
+            android:id="@+id/searchbtn"
+            android:layout_width="74dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="257dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="-1dp"
+            app:srcCompat="@drawable/search_btn" />
+
+    </RelativeLayout>
+
+
+    <!--   &lt;!&ndash; Fajr time layout&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout_fajr"-->
+<!--        android:layout_width="413dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"-->
+<!--        app:layout_constraintVertical_bias="0.319">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/fajrhead"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_marginStart="51dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="Fajr"-->
+<!--            android:textColor="@color/home_plate"-->
+<!--            android:textSize="34sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/fajr"-->
+<!--            android:layout_width="155dp"-->
+<!--            android:layout_height="44dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginEnd="3dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|left"-->
+<!--            android:text="00:00"-->
+<!--            android:textColor="@color/home_plate"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="normal" />-->
+
+
+
+<!--    </RelativeLayout>-->
+
+
+<!--    &lt;!&ndash;Sunrise time layout&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout_sunrise"-->
+<!--        android:layout_width="412dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_fajr"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/sunrisehead"-->
+<!--            android:layout_width="133dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="Sunrise"-->
+<!--            android:textColor="#7CC1BB"-->
+<!--            android:textSize="34sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/sunrise"-->
+<!--            android:layout_width="179dp"-->
+<!--            android:layout_height="44dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|left"-->
+<!--            android:text="00:00"-->
+<!--            android:textColor="#7CC1BB"-->
+<!--            android:textSize="30sp" />-->
+
+
+
+<!--    </RelativeLayout>-->
+<!--   &lt;!&ndash;Dhur time layout&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout_duhr"-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="45dp"-->
+
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_sunrise">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/duhrhead"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="-1dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="Duhr"-->
+<!--            android:textColor="#FFEB3B"-->
+<!--            android:textSize="34sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/duhr"-->
+<!--            android:layout_width="176dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="-3dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="00:00"-->
+<!--            android:textColor="#CDDC39"-->
+<!--            android:textSize="30sp" />-->
+
+
+
+<!--    </RelativeLayout>-->
+
+<!--&lt;!&ndash;    asar time layout&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout_asar"-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.233"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_duhr"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/asarhead"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="34dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="Asar"-->
+<!--            android:textColor="#03A9F4"-->
+<!--            android:textSize="34sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/asar"-->
+<!--            android:layout_width="170dp"-->
+<!--            android:layout_height="43dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|left"-->
+<!--            android:text="00:00"-->
+<!--            android:textColor="#03A9F4"-->
+<!--            android:textSize="30sp" />-->
+
+
+<!--    </RelativeLayout>-->
+<!--&lt;!&ndash;  sunset time layout  &ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout_sunset"-->
+<!--        android:layout_width="407dp"-->
+<!--        android:layout_height="45dp"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_asar"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/sunsethead"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="37dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginEnd="141dp"-->
+<!--            android:layout_marginBottom="-1dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="Sunset"-->
+<!--            android:textColor="#F44336"-->
+<!--            android:textSize="34sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/sunset"-->
+<!--            android:layout_width="164dp"-->
+<!--            android:layout_height="44dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|left"-->
+<!--            android:text="00:00"-->
+<!--            android:textColor="#F44336"-->
+<!--            android:textSize="30sp" />-->
+
+
+<!--    </RelativeLayout>-->
+
+<!--    &lt;!&ndash;Maghrib time layout&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout_maghrib"-->
+<!--        android:layout_width="413dp"-->
+<!--        android:layout_height="45dp"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_sunset"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/maghribhead"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginTop="-2dp"-->
+<!--            android:layout_marginEnd="116dp"-->
+<!--            android:layout_toStartOf="@+id/sunset"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="Maghrib"-->
+<!--            android:textColor="#B9C6C8"-->
+<!--            android:textSize="34sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/maghrib"-->
+<!--            android:layout_width="168dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginTop="-1dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|left"-->
+<!--            android:text="00:00"-->
+<!--            android:textColor="#B9C6C8"-->
+<!--            android:textSize="30sp" />-->
+
+
+<!--    </RelativeLayout>-->
+
+<!--    &lt;!&ndash;   Isha time layout&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout_isha"-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_maghrib"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/ishahead"-->
+<!--            android:layout_width="91dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="-2dp"-->
+<!--            android:layout_marginEnd="113dp"-->
+<!--            android:layout_toStartOf="@+id/isha"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="Isha"-->
+<!--            android:textColor="#673AB7"-->
+<!--            android:textSize="34sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/isha"-->
+<!--            android:layout_width="176dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:fontFamily="@font/lato_regular"-->
+<!--            android:gravity="center|left"-->
+<!--            android:text="00:00"-->
+<!--            android:textColor="#673AB7"-->
+<!--            android:textSize="30sp" />-->
+
+
+
+<!--    </RelativeLayout>-->
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="273dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="top|left"
+        android:text="Sylhet, Bangladesh"
+        android:textColor="#F4E3E3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="463dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_image"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!--Sunrise time layout-->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_fajr"
+            android:layout_width="413dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout_sunrise"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/fajrhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="67dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|start"
+                android:text="Fajr"
+                android:textColor="@color/home_plate"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/get_fajr"
+                android:layout_width="167dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="-2dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|left"
+                android:text="00:00"
+                android:textColor="@color/home_plate"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+        <!--Dhur time layout-->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_sunrise"
+            android:layout_width="412dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout_duhr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout_fajr">
+
+
+            <TextView
+                android:id="@+id/sunrisehead"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|start"
+                android:text="Sunrise"
+                android:textColor="#7CC1BB"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sunrise"
+                android:layout_width="167dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|left"
+                android:text="00:00"
+                android:textColor="#7CC1BB"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_duhr"
+            android:layout_width="410dp"
+            android:layout_height="45dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout_asar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout_sunrise">
+
+            <TextView
+                android:id="@+id/duhrhead"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|start"
+                android:text="Duhr"
+                android:textColor="#FFEB3B"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/get_dhur"
+                android:layout_width="167dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|start"
+                android:text="00:00"
+                android:textColor="#CDDC39"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+        <!--    asar time layout-->
+        <RelativeLayout
+            android:id="@+id/relativeLayout_asar"
+            android:layout_width="410dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout_sunset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout_duhr">
+
+            <TextView
+                android:id="@+id/asarhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|start"
+                android:text="Asar"
+                android:textColor="#03A9F4"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/get_asar"
+                android:layout_width="167dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|left"
+                android:text="00:00"
+                android:textColor="#03A9F4"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+        <!--  sunset time layout  -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout_sunset"
+            android:layout_width="407dp"
+            android:layout_height="45dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout_maghrib"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout_asar">
+
+            <TextView
+                android:id="@+id/sunsethead"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="141dp"
+                android:layout_marginBottom="-1dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|start"
+                android:text="Sunset"
+                android:textColor="#F44336"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sunset"
+                android:layout_width="167dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|left"
+                android:text="00:00"
+                android:textColor="#F44336"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+        <!--Maghrib time layout-->
+        <RelativeLayout
+            android:id="@+id/relativeLayout_maghrib"
+            android:layout_width="413dp"
+            android:layout_height="45dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout_isha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout_sunset">
+
+
+            <TextView
+                android:id="@+id/maghribhead"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="116dp"
+                android:layout_toStartOf="@+id/sunset"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|start"
+                android:text="Maghrib"
+                android:textColor="#B9C6C8"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/get_maghrib"
+                android:layout_width="167dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="-1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|left"
+                android:text="00:00"
+                android:textColor="#B9C6C8"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+        <!--   Isha time layout-->
+        <RelativeLayout
+            android:id="@+id/relativeLayout_isha"
+            android:layout_width="410dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="149dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout_maghrib">
+
+            <TextView
+                android:id="@+id/ishahead"
+                android:layout_width="91dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="113dp"
+                android:layout_toStartOf="@+id/get_isha"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|start"
+                android:text="Isha"
+                android:textColor="#673AB7"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/get_isha"
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center|left"
+                android:text="00:00"
+                android:textColor="#673AB7"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

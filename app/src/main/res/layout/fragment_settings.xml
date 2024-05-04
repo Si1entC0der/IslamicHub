@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/show_jamat_time_bg"
+    tools:context=".Show_Jamat_Time">
+
+
+    <LinearLayout
+        android:id="@+id/country_container"
+        android:layout_width="344dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="220dp"
+
+        android:background="#009688"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/country_name"
+
+            android:layout_width="344dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="#009688"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/distric_container"
+        android:layout_width="344dp"
+        android:layout_height="38dp"
+        android:background="#009688"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_container"
+        tools:ignore="DuplicateIds">
+
+
+        <Spinner
+            android:id="@+id/District_Name"
+            android:layout_width="344dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="#009688"
+            android:hint="Select District"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/upazil_container"
+        android:layout_width="344dp"
+        android:layout_height="38dp"
+        android:background="#009688"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distric_container">
+
+        <Spinner
+            android:id="@+id/Upazila_Name"
+            android:layout_width="344dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="#009688"
+            android:hint="Select Upazila"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="344dp"
+        android:layout_height="38dp"
+        android:background="#009688"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upazil_container">
+
+        <Spinner
+            android:id="@+id/Mosque_Name"
+            android:layout_width="344dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="#009688"
+            android:hint="Select Mosque"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/get_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="32dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/insert_mosque"-->
+<!--        android:layout_width="46dp"-->
+<!--        android:layout_height="42dp"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.158"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:srcCompat="@drawable/baseline_add_24" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/update_btn"-->
+<!--        android:layout_width="46dp"-->
+<!--        android:layout_height="42dp"-->
+<!--        android:layout_marginBottom="56dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.863"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:srcCompat="@drawable/baseline_sync_24" />-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout3"-->
+<!--        android:layout_width="128dp"-->
+<!--        android:layout_height="29dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.09"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView2"-->
+<!--            android:layout_width="123dp"-->
+<!--            android:layout_height="33dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:text="Insert Mosjid"-->
+<!--            android:textColor="#CDDC39"-->
+<!--            android:textSize="20sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="123dp"-->
+<!--        android:layout_height="33dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.951"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView4"-->
+<!--            android:layout_width="123dp"-->
+<!--            android:layout_height="33dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Update  Time"-->
+<!--            android:textColor="#CDDC39"-->
+<!--            android:textSize="20sp" />-->
+<!--    </RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="220dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="108dp"
+        android:text="Show Jamat Time"
+        android:textColor="#FFC107"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
+
+    //app:layout_constraintTop_toBottomOf="@+id/insert_mosque"
+        tools:layout_editor_absoluteX="132dp" />
+
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>
