@@ -1,0 +1,3 @@
+The app addresses the need for a convenient and comprehensive tool to assist Muslims with daily prayers and mosque-related activities. It offers features such as displaying prayer times based on the user's current location and allowing users to search for prayer times in any city. Additionally, the app includes tools like a Tasbeeh counter, a Qibla direction finder, and a random hadith generator, making it easier to practice Islamic rituals.
+
+A key feature is the ability to insert, view, and update Jamat times for nearby mosques, fostering community engagement and improving coordination of prayer schedules. This app provides users with a simple way to access and stay informed about Jamat times at their local mosques.
